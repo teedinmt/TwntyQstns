@@ -1,0 +1,21 @@
+
+
+             Customize and Install: 
+------------------------------------------------------
+How to set up the external files used in this program
+------------------------------------------------------
+
+1) Copy these 3 files from the src/networkfiles to a location of your choice:  WIOA_Application12PDF.pdf, twntyqstns_be.accdb, twntyqstns.accdb
+
+2) In the LocalCustomization file, set up the new pathways to these files on your system. Remember to also set where you want to save reports. 
+
+3) Now use Microsoft Access to relink the database files:
+  a. Open  twntyqstns.accdb  in Microsoft Access 
+  b. Under the “External Data” tab in MS Access, we will use “Linked Table Manager” to relink the file to its partner back end file, twntyqstns_be.
+  c. Choose “Add” to add a new link. Skip the name and choose Access as the “Select Source Data” and click “Next” 
+  d. Choose the file  twntyqstns_be  in its new location. Leave the password field empty and choose “Finish” (The _be is the "backend" file, you can Google "Split an Access database" to learn more)
+  e. Follow the prompts to relink tables by choosing “Select All” or “ok” for each table.  
+  f. Once back to the original linking screen, click a box to check and “Delete” any older links. Close the Linked Table Manager.
+
+4)	On the staff screen, you can log in with username: astaffmember  password:foreveryoung 
+              
