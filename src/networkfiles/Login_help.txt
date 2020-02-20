@@ -6,4 +6,3 @@ the MS Access database twntyqstns.accdb  has a user table with
 username:  astaffmember
 password: foreveryoung
 
-You can use this to login on the staff screen and should not have to have MS Access on your computer to try the program
