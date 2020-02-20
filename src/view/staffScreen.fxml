@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewControllers.StaffScreenController">
+     <children>
+        <Button fx:id="ExitButton" layoutX="821.0" layoutY="618.0" mnemonicParsing="false" onAction="#exitProgramonMain" text="Exit Program">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="18.0" />
+         </font></Button>
+        <Label layoutX="45.0" layoutY="421.0" text="Checking the box creates a report.">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <Label layoutX="208.0" layoutY="68.0" prefHeight="17.0" prefWidth="171.0" text="Current Database Entries">
+         <font>
+            <Font name="Arial Narrow" size="14.0" />
+         </font></Label>
+        
+        <Label layoutX="161.0" layoutY="609.0" text="*(First select a client)">
+         <font>
+            <Font name="Arial Narrow" size="14.0" />
+         </font></Label>
+        <TableView fx:id="clientTable" layoutX="29.0" layoutY="94.0" prefHeight="259.0" prefWidth="669.0">
+            <columns>
+            <TableColumn fx:id="anId" prefWidth="26.0" text="ID" />
+                <TableColumn fx:id="anenrollmentdate" prefWidth="139.33337783813477" text="Date Enrolled" />
+                <TableColumn fx:id="fname" prefWidth="175.33326721191406" text="First Name" />
+                <TableColumn fx:id="lname" prefWidth="162.66665649414062" text="Last Name" />
+                <TableColumn fx:id="phone" prefWidth="132.0" text="Phone" />
+            </columns>
+        </TableView>
+
+        <GridPane layoutX="41.0" layoutY="442.0" prefHeight="131.0" prefWidth="383.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="32.66666666666667" minHeight="10.0" prefHeight="25.999979654947918" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="32.00002034505208" minHeight="10.0" prefHeight="32.00002034505208" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="24.66668701171875" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="29.3333740234375" minHeight="10.0" prefHeight="29.3333740234375" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <CheckBox fx:id="sendlisttospreadsheet" mnemonicParsing="false" onAction="#sendListtoSpreadsheet" prefHeight="38.0" prefWidth="356.0" text="Send AllClient List to Spreadsheet">
+               <font>
+                  <Font name="Arial Narrow" size="18.0" />
+               </font></CheckBox>
+                <CheckBox fx:id="printnamesandnumbers" mnemonicParsing="false" onAction="#printNamesandNumbers" prefHeight="25.0" prefWidth="333.0" text="Create Names and Numbers List" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Narrow" size="18.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="createcustomquestions" mnemonicParsing="false" onAction="#createCustomQuestionsReport" prefHeight="25.0" prefWidth="335.0" text="Create Custom Questions Report" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Narrow" size="18.0" />
+               </font></CheckBox>
+                <CheckBox fx:id="printIndividualPDF" mnemonicParsing="false" onAction="#printIndividualPDF" prefHeight="32.0" prefWidth="316.0" text="Save a PDF for Selected Individual*" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Narrow" size="18.0" />
+               </font></CheckBox>
+            </children>
+        </GridPane>
+      <Label fx:id="reportPDFcreatedmessage" alignment="CENTER_RIGHT" layoutX="408.0" layoutY="556.0" prefHeight="11.0" prefWidth="232.0" text="A PDF Report was created --">
+         <font>
+            <Font name="Arial Bold Italic" size="14.0" />
+         </font></Label>
+      <Label fx:id="staffTitle" layoutX="376.0" layoutY="14.0" prefHeight="33.0" prefWidth="245.0" text="Staff  /  Report Screen">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="spreadsheet1message" alignment="CENTER_RIGHT" layoutX="332.0" layoutY="449.0" prefHeight="16.0" prefWidth="333.0" text="A spreadsheet of clients was created --">
+         <font>
+            <Font name="Arial Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="changecustomquestionsbutton" layoutX="766.0" layoutY="94.0" mnemonicParsing="false" onAction="#gotoCustomQuestionsScreen" text="Change Custom Questions">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="14.0" />
+         </font></Button>
+      <Label fx:id="namesandnumbersmessage" alignment="CENTER_RIGHT" layoutX="357.0" layoutY="483.0" prefHeight="16.0" prefWidth="309.0" text="A Names/Numbers list was created --">
+         <font>
+            <Font name="Arial Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="deselectAllbutton" layoutX="713.0" layoutY="308.0" mnemonicParsing="false" onAction="#deselectAllandRefresh" prefHeight="42.0" prefWidth="102.0" text="Deselect All " wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TextField fx:id="reportPDFtitle" layoutX="642.0" layoutY="549.0" prefHeight="30.0" prefWidth="219.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="spreadsheettitle1" layoutX="667.0" layoutY="442.0" prefHeight="30.0" prefWidth="193.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="spreadsheettitle2" layoutX="672.0" layoutY="478.0" prefHeight="30.0" prefWidth="187.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <Label fx:id="PDFfileNotetext" layoutX="240.0" layoutY="368.0" prefHeight="42.0" prefWidth="403.0" text="PDF files for clients are saved when the client submits the application!   You will find them in your reports folder: G:\\ABEReg\Private\GeneratedReports" wrapText="true">
+         <font>
+            <Font name="Arial Narrow Italic" size="14.0" />
+         </font></Label>
+      <Label fx:id="Noteredtext" layoutX="177.0" layoutY="381.0" text="Note:" textFill="#e11010">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="customquestionreportmessage1" alignment="CENTER_RIGHT" layoutX="346.0" layoutY="518.0" prefHeight="17.0" prefWidth="323.0" text="A  Custom Questions Report was created --" wrapText="true">
+         <font>
+            <Font name="Arial Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="customquestionstitle" layoutX="672.0" layoutY="514.0" prefHeight="30.0" prefWidth="187.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextField>
+      <Label fx:id="alertnoclientselected" layoutX="302.0" layoutY="591.0" prefHeight="17.0" prefWidth="259.0" text="Alert!  No client selected. First select a client." textFill="#d70f0f">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

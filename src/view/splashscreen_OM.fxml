@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewControllers.Splashscreen_OMController">
+    <stylesheets>
+        <URL value="@/css/splashscreen_om.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="4.0" prefHeight="400.0" prefWidth="593.0">
+         <children>
+            <Label fx:id="onemomentpleasetext" layoutX="33.0" layoutY="156.0" prefHeight="87.0" prefWidth="464.0" text="One Moment Please">
+               <font>
+                  <Font name="System Bold Italic" size="48.0" />
+               </font>
+            </Label>
+            <Circle fx:id="dot1" fill="DODGERBLUE" layoutX="469.0" layoutY="266.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="dot2" fill="DODGERBLUE" layoutX="497.0" layoutY="266.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="dot3" fill="DODGERBLUE" layoutX="525.0" layoutY="266.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="dot4" fill="DODGERBLUE" layoutX="556.0" layoutY="266.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1000.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewControllers.StaffcustomquestionsController">
+    <stylesheets>
+        <URL value="@/css/customquestions.css" />
+    </stylesheets>
+    <children>
+        <Label layoutX="322.0" layoutY="35.0" prefHeight="29.0" prefWidth="465.0" text="Page 3  Custom Client Questions">
+            <font>
+                <Font name="Arial Narrow Bold Italic" size="24.0" />
+            </font>
+        </Label>
+        <GridPane layoutX="30.0" layoutY="181.0" prefHeight="362.0" prefWidth="905.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="253.0" minWidth="10.0" prefWidth="105.33333079020183" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="819.3333460489908" minWidth="10.0" prefWidth="799.3333358764648" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="52.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label fx:id="question1label" alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="101.0" text="Question 1:">
+                    <font>
+                        <Font name="Arial Narrow Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="question1text" prefHeight="25.0" prefWidth="447.0" promptText="this answer space is long, --good for question like &quot;describe&quot; or &quot;explain&quot; " GridPane.columnIndex="1" />
+                <Label fx:id="question2label" alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="103.0" text="Question 2:" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Arial Narrow Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="question2text" prefHeight="25.0" prefWidth="447.0" promptText="this answer space also longer , --ask for &quot;a few sentences&quot; response" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Label fx:id="question3label" alignment="CENTER_RIGHT" prefHeight="24.0" prefWidth="103.0" text="Question 3:" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="question3text" prefHeight="25.0" prefWidth="447.0" promptText="shorter answer space, --good for questions that being with &quot;list...&quot; " GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Label fx:id="question4label" alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="102.0" text="Question 4:" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="question4text" prefHeight="25.0" prefWidth="447.0" promptText="another shorter space, --good for questions answered with a few words" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Label fx:id="question5label" alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="102.0" text="Question 5:" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="question5text" prefHeight="25.0" prefWidth="447.0" promptText="this answer space would be good for a one-sentence response." GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <Label fx:id="question6label" alignment="CENTER_RIGHT" prefHeight="22.0" prefWidth="101.0" text="Question 6:" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="question6text" prefHeight="25.0" prefWidth="447.0" promptText="another answer space --good for a shorter, one-sentence response" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <Label fx:id="question7label" alignment="CENTER_RIGHT" prefHeight="33.0" prefWidth="99.0" text="Question 7:" GridPane.rowIndex="7">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <TextArea fx:id="question7text" prefHeight="47.0" prefWidth="466.0" promptText="this answer space is good for a one-sentence reponse, but you have more space to write your question" text="&#10;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                <Label fx:id="labelexplainingq7" alignment="TOP_LEFT" prefHeight="21.0" prefWidth="669.0" text="The last question has a short, one or two sentence space, but you have a longer space to explain your question." wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                    <font>
+                        <Font name="Arial Narrow" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </GridPane>
+        <Button fx:id="setQuestionsButton" layoutX="669.0" layoutY="565.0" mnemonicParsing="false" onAction="#setQuestionstoClientScreen" text="Save and Preview on Client Screen">
+            <font>
+                <Font name="Arial Narrow Bold Italic" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="returntoStaffScreenButton" layoutX="53.0" layoutY="631.0" mnemonicParsing="false" onAction="#returntoStaffScreen" text="return to staff screen">
+            <font>
+                <Font name="Arial Narrow" size="18.0" />
+            </font>
+        </Button>
+        <RadioButton fx:id="clearallradiobutton" layoutX="467.0" layoutY="157.0" mnemonicParsing="false" onAction="#clearAllQuestions" selected="true" text="Clear All">
+            <toggleGroup>
+                <ToggleGroup fx:id="showhidequestions" />
+            </toggleGroup>
+            <font>
+                <Font name="Arial Narrow Bold Italic" size="18.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="showquestionsradiobutton" layoutX="163.0" layoutY="154.0" mnemonicParsing="false" onAction="#showCurrentQuestions" text="Show Current Questions" toggleGroup="$showhidequestions">
+            <font>
+                <Font name="Arial Narrow Bold Italic" size="18.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="previousquestionsradiobutton" layoutX="669.0" layoutY="157.0" mnemonicParsing="false" onAction="#getPreviousQuestions" text="Get Previous Questions" toggleGroup="$showhidequestions">
+            <font>
+                <Font name="Arial Narrow Bold Italic" size="18.0" />
+            </font>
+        </RadioButton>
+        <Label fx:id="noprevioustext" layoutX="732.0" layoutY="107.0" prefHeight="50.0" prefWidth="215.0" text="(No previous questions were found.)" textFill="#df1111" wrapText="true">
+            <font>
+                <Font name="Arial Narrow Italic" size="14.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
