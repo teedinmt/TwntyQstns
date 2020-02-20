@@ -1,6 +1,5 @@
 
 # Twenty Questions Application Software
-
 ```
 PROBLEM: Staff members have to spend extra time processing paper applications and handwritten forms  
 SOLUTION: Have clients type in their own information, where it is then saved to a database, 
@@ -12,9 +11,6 @@ If you customize and use it for an organization, I would love to hear about it!
 
 
 ## Getting Started
-
-To understand this program, read the "Description of Program" section below.
-
 To use this program, follow the steps in the "Customize and Install" file.
 
 Twenty Questions is a stand-alone Java program for the Windows platform. Once installed, a client chooses "New Application" OR provides a staff username and password to log in. 
