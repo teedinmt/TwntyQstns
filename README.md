@@ -1,5 +1,5 @@
 
-# Twenty Questions Application Software
+# Twenty Questions Software
 ```
 PROBLEM: Staff members have to spend extra time processing paper applications and handwritten forms  
 SOLUTION: Have clients type in their own information, where it is then saved to a database, 
@@ -33,7 +33,7 @@ Data is saved to a relational Microsoft Access database, split into front-end, b
 ```
 See "Customize and Install" file. Basically, you will 
 1)choose location for supporting files (database file and PDF fillable form), 
-2)relink the Microsoft Access databases 
+2)re-link the Microsoft Access databases 
 3)create a distributable jar file, and save it to the computers you plan to use. 
 (The program checks path to location of files, checks database when program starts.) 
 ```
