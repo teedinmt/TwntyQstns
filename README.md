@@ -5,6 +5,8 @@ PROBLEM: Staff members have to spend extra time processing paper applications an
 SOLUTION: Have clients type in their own information, where it is then saved to a database, 
 and then inserted into a fillable PDF form and saved to a reports folder.
 ```
+To best understand this program, view the User Manual. You will see screen examples and an explanation of how each is used.
+
 This is my contribution to open-source code, a slight modification of a school project. I am planning for the next version! Thus, I would welcome feedback and suggestions about improvements, corrections, and ways to improve it.
 
 If you customize and use it for an organization, I would love to hear about it! 
@@ -27,6 +29,8 @@ Data is saved to a relational Microsoft Access database, split into front-end, b
 2)a screen collecting name, birthdate, general address info 
 3)a screen collecting educational and employment info 
 4)a customizable screen for any additional 7 questions.
+
+ --see the User Manual for a visual reference.
 
 ```
 ## Deployment
